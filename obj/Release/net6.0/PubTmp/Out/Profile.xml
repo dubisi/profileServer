@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Profile</name>
+    </assembly>
+    <members>
+        <member name="M:Profile.Controllers.AddProfileController.CreateMe(Profile.Model.Personal)">
+            <summary>
+            Add person to the database.
+            </summary>
+            <returns>The requested body</returns>
+        </member>
+        <member name="T:Profile.Data.ProfileContext">
+            <summary>
+            Database Entities
+            </summary>
+        </member>
+        <member name="P:Profile.Data.ProfileContext.Education">
+            <summary>
+            Education Table
+            </summary>
+        </member>
+        <member name="P:Profile.Data.ProfileContext.Experiences">
+            <summary>
+            Experiences Table
+            </summary>
+        </member>
+        <member name="P:Profile.Data.ProfileContext.Projects">
+            <summary>
+            Projects Table
+            </summary>
+        </member>
+        <member name="P:Profile.Data.ProfileContext.Skills">
+            <summary>
+            Skills Table
+            </summary>
+        </member>
+        <member name="P:Profile.Data.ProfileContext.Contact">
+            <summary>
+            Contact Tables
+            </summary>
+        </member>
+        <member name="T:Profile.Model.Contact">
+            <summary>
+            Model class to create entity for storing contacts
+            </summary>
+        </member>
+    </members>
+</doc>
