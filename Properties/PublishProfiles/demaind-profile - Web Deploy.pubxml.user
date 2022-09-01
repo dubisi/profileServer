@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAANuwrKBBMdUu4ohQQfQCPLgAAAAACAAAAAAAQZgAAAAEAACAAAACIVerU9Secck8Y5SG3L9+MmrNofrRrhS6EUuMMaKsoMQAAAAAOgAAAAAIAACAAAAD+eCx8s+ayKxz/OFj3esc6SQvSMJsYNJ1EePKnzLpyc4AAAAD6ZqZYkd50mznGW56uRUT0S6salCJ+dfBlHTyIABiXA7v6WAs754sCbbkNI5HBmeTyaMvUOPcCYXg0+wn4KPRQXD8cUVd8Lb0rTdEgT5MPPwpmbChTz1rXxCEbTk2+qwl9AeP1UxhcMTRDg5MzFApQ2BkK+5MGSIULw2yEZmiF70AAAABtURZnaq2P7eyd3tq11K1dgV6GyBG9DYGnDaUoYHeBu7wrfAEkUdaF1wNDzLkl01ubR/uOUYBwcumv+JcJ0wHM</EncryptedPassword>
+    <History>True|2022-09-01T14:10:48.7550589Z;True|2022-09-01T14:18:18.6759159+02:00;True|2022-09-01T14:05:03.8416081+02:00;True|2022-09-01T14:02:35.6661182+02:00;True|2022-08-31T19:59:46.9869354+02:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AZURE_SQL_CONNECTIONSTRING">
+      <Value>Data Source=profileserver265.database.windows.net,1433%3bInitial Catalog=profileDB%3bUser ID=dubisi%3bPassword=Hlayi%4048710</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

@@ -9,10 +9,17 @@ namespace Profile.Data
 	public class ProfileContext : DbContext
 
 	{
+		protected readonly IConfiguration Configuration;
 
-		public ProfileContext(DbContextOptions<ProfileContext> options) : base(options)
+		public ProfileContext(IConfiguration configuration)
 		{
+			Configuration = configuration;
 
+		}
+
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			optionsBuilder.UseSqlServer(Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING"));
 		}
 
 		public DbSet<About> About => Set<About>();

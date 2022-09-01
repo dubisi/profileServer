@@ -1,7 +1,10 @@
-﻿namespace Profile.Model
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Profile.Model
 {
 	public class Skills
 	{
+		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public int Id { get; set; }
 		public string? Name { get; set; }
 
