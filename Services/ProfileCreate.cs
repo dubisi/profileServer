@@ -88,10 +88,6 @@ namespace Profile.Services
 
 			return contact1;
 		}
-<<<<<<< HEAD
-
-=======
->>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
 	}
 }
 
