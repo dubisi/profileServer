@@ -42,12 +42,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
+<<<<<<< HEAD
               "version": "[6.0.8, )"
+=======
+              "version": "[6.0.5, )"
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
+<<<<<<< HEAD
               "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
@@ -66,10 +71,21 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
+=======
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
               "version": "[6.0.5, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
+<<<<<<< HEAD
               "version": "[6.0.8, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
@@ -79,6 +95,13 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+=======
+              "version": "[6.0.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
             }
           },
           "imports": [
@@ -87,8 +110,12 @@
             "net47",
             "net471",
             "net472",
+<<<<<<< HEAD
             "net48",
             "net481"
+=======
+            "net48"
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -100,7 +127,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
         }
       }
     }

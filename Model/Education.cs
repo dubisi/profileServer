@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Profile.Model
@@ -5,6 +6,12 @@ namespace Profile.Model
 	public class Education
 	{
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+=======
+﻿namespace Profile.Model
+{
+	public class Education
+	{
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
 		public int Id { get; set; }
 		public string? Name { get; set; }
 

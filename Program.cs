@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using NuGet.Protocol.Core.Types;
 using Profile.Controllers;
+=======
+using Microsoft.OpenApi.Models;
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
 using Profile.Data;
 using Profile.Services;
 using System.Reflection;
@@ -9,10 +13,13 @@ using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+<<<<<<< HEAD
 builder.Services.AddScoped<ProfileContext>();
 builder.Services.AddScoped<ProfileServices>();
 builder.Services.AddScoped<ProfileCreate>();
 
+=======
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
 
 
 
@@ -37,8 +44,14 @@ builder.Services.AddSwaggerGen(c =>
 	var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 	c.IncludeXmlComments(xmlPath);
 });
+<<<<<<< HEAD
 
 /*builder.Services.AddSqlite<ProfileContext>("Data Source=Profile.db");*/
+=======
+builder.Services.AddScoped<ProfileServices>();
+builder.Services.AddScoped<ProfileCreate>();
+builder.Services.AddSqlite<ProfileContext>("Data Source=Profile.db");
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
 
 var app = builder.Build();
 
@@ -48,11 +61,15 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
+<<<<<<< HEAD
 	app.UseSwaggerUI(options =>
 	{
 		options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
 		options.RoutePrefix = string.Empty;
 	});
+=======
+	app.UseSwaggerUI();
+>>>>>>> 60167df514ac0c0f85c7cacbd69397fd39ac45d7
 
 }
 
