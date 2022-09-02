@@ -39,14 +39,14 @@ namespace Profile.Controllers
 		}
 
 		[HttpGet("about/{Id}", Name = "GetAbout")]
-		public ActionResult<About> GetAbout(int Id)
+		public IEnumerable<About> GetAbout(int Id)
 		{
 			var about = _service.GetAbout(Id);
 
-			if (about == null)
-			{
-				return NotFound();
-			}
+			/*			if (about == null)
+						{
+							return NotFound();
+						}*/
 
 			return about;
 		}

@@ -23,11 +23,15 @@ namespace Profile.Services
 
 		public About? CreateAbout(About about)
 		{
-			_context.About.Add(about);
+			var persornal = _context.Personal.SingleOrDefault(x => x.Email == about.
+			Personal!.Email);
+
+			About about1 = new About { Id = about.Id, AboutMe = about.AboutMe, ImagePath = about.ImagePath, Personal = persornal };
+			_context.About.Add(about1);
 			_context.SaveChanges();
 
 
-			return about;
+			return about1;
 		}
 
 		public Education? CreateEducation(Education education)

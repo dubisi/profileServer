@@ -19,9 +19,9 @@ namespace Profile.Services
 			return _context.Personal.AsNoTracking().ToList();
 		}
 
-		public About? GetAbout(int Id)
+		public IEnumerable<About> GetAbout(int Id)
 		{
-			return _context.About!.Find(Id);
+			return _context.About.Where(x => x.Personal!.Id == Id).ToList();
 		}
 
 		public Personal? GetPersonal(int Id)
