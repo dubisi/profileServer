@@ -5,11 +5,22 @@ using Profile.Services;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 // Add services to the container.
 builder.Services.AddScoped<ProfileContext>();
 builder.Services.AddScoped<ProfileServices>();
 builder.Services.AddScoped<ProfileCreate>();
+
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy(name: "MyPolicy",
+				policy =>
+				{
+					policy.WithOrigins("https://dubisi-1dcfa.web.app", "https://dubisi.github.io").AllowAnyHeader()
+												  .AllowAnyMethod();
+				});
+});
 
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -51,7 +62,7 @@ if (app.Environment.IsDevelopment())
 
 }
 
-app.UseCors();
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseHttpsRedirection();
 

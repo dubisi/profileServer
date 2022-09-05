@@ -1,6 +1,8 @@
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\PubTmp\Out\Profile.exe
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\PubTmp\Out\package-lock.json
+C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\PubTmp\Out\package.json
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\PubTmp\Out\Profile.dll
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\PubTmp\Out\Profile.runtimeconfig.json
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\PubTmp\Out\Profile.pdb

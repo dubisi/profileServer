@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using Profile.Model;
 using Profile.Services;
 
@@ -16,6 +17,8 @@ namespace Profile.Controllers
 			_service = service;
 
 		}
+
+		[EnableCors("MyPolicy")]
 		[HttpGet("person/", Name = "GetAll")]
 		public IEnumerable<Personal> GetAll()
 		{
@@ -24,7 +27,7 @@ namespace Profile.Controllers
 			return personal;
 		}
 
-
+		[EnableCors("MyPolicy")]
 		[HttpGet("person/{Id}", Name = "GetPerson")]
 		public ActionResult<Personal> GetPersonById(int Id)
 		{
@@ -38,6 +41,7 @@ namespace Profile.Controllers
 			return personal;
 		}
 
+		[EnableCors("MyPolicy")]
 		[HttpGet("about/{Id}", Name = "GetAbout")]
 		public IEnumerable<About> GetAbout(int Id)
 		{
@@ -51,6 +55,7 @@ namespace Profile.Controllers
 			return about;
 		}
 
+		[EnableCors("MyPolicy")]
 		[HttpGet("education/{Id}", Name = "GetEducation")]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		public IEnumerable<Education> GetEduById(int Id)
@@ -64,6 +69,7 @@ namespace Profile.Controllers
 			return education;
 		}
 
+		[EnableCors("MyPolicy")]
 		[HttpGet("experience/{Id}", Name = "GetExperience")]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		public IEnumerable<Experience> GetExpById(int Id)
@@ -74,6 +80,7 @@ namespace Profile.Controllers
 			return experience;
 		}
 
+		[EnableCors("MyPolicy")]
 		[HttpGet("projects/{Id}", Name = "GetProjects")]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		public IEnumerable<Projects> GetProById(int Id)
@@ -83,6 +90,7 @@ namespace Profile.Controllers
 			return projects;
 		}
 
+		[EnableCors("MyPolicy")]
 		[HttpGet("skills/{Id}", Name = "GetSkills")]
 		[ProducesResponseType(StatusCodes.Status200OK)]
 		public IEnumerable<Skills> GetSkillsById(int Id)
@@ -92,6 +100,7 @@ namespace Profile.Controllers
 			return skills;
 		}
 
+		[EnableCors("MyPolicy")]
 		[HttpGet("contacts/{Id}", Name = "GetContacts")]
 		public IEnumerable<Contact> GetContactsById(int Id)
 		{
@@ -100,6 +109,7 @@ namespace Profile.Controllers
 			return contact;
 		}
 
+		[EnableCors("MyPolicy")]
 		[HttpDelete("person/{Id}")]
 		public IActionResult DeletePerson(int Id)
 		{
@@ -113,6 +123,7 @@ namespace Profile.Controllers
 			return NotFound();
 		}
 
+		[EnableCors("MyPolicy")]
 		[HttpDelete("education/{Id}")]
 		public IActionResult DeleteEducation(int Id)
 		{

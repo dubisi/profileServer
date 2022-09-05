@@ -285,3 +285,5 @@ C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\Profile.xml
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\Profile.pdb
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\Profile.genruntimeconfig.cache
 C:\Users\hlayi\source\repos\Profile\obj\Release\net6.0\ref\Profile.dll
+C:\Users\hlayi\source\repos\Profile\bin\Release\net6.0\package-lock.json
+C:\Users\hlayi\source\repos\Profile\bin\Release\net6.0\package.json
